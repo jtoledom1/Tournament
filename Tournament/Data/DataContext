@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+usiing System.Data.Entity;
+
+namespace Tournament.Data
+{
+
+    public class DataContext:DbContext
+    {
+     DbSet<Equipo>Equipos{get; set;}
+     public DataContext():base("name=con"){}
+    }
+
+}
